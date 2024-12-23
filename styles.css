@@ -1,0 +1,45 @@
+body {
+    padding: 40px;
+}
+
+.custom-table-button {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-gap: 2px;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.cell.highlighted {
+    background: #007bff;
+    border-color: #0056b3;
+}
+
+#grid-dimensions {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #333;
+}
