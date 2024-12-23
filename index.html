@@ -17,25 +17,27 @@
         </span>
         <span class="ql-formats">
             <!-- Custom table control button -->
-            <button type="button" class="custom-table-button" id="customTableBtn">
-                <!-- Table icon source: https://github.com/slab/quill/blob/main/packages/quill/src/assets/icons/table.svg?short_path=cf85df9 -->
-                <svg viewbox="0 0 18 18">
-                    <rect class="ql-stroke" height="12" width="12" x="3" y="3"></rect>
-                    <rect class="ql-fill" height="2" width="3" x="5" y="5"></rect>
-                    <rect class="ql-fill" height="2" width="4" x="9" y="5"></rect>
-                    <g class="ql-fill ql-transparent">
-                    <rect height="2" width="3" x="5" y="8"></rect>
-                    <rect height="2" width="4" x="9" y="8"></rect>
-                    <rect height="2" width="3" x="5" y="11"></rect>
-                    <rect height="2" width="4" x="9" y="11"></rect>
-                    </g>
-                </svg>
+            <div class="custom-table-button-wrapper">
+                <button type="button" class="custom-table-button" id="customTableBtn">
+                    <!-- Table icon source: https://github.com/slab/quill/blob/main/packages/quill/src/assets/icons/table.svg?short_path=cf85df9 -->
+                    <svg viewbox="0 0 18 18">
+                        <rect class="ql-stroke" height="12" width="12" x="3" y="3"></rect>
+                        <rect class="ql-fill" height="2" width="3" x="5" y="5"></rect>
+                        <rect class="ql-fill" height="2" width="4" x="9" y="5"></rect>
+                        <g class="ql-fill ql-transparent">
+                        <rect height="2" width="3" x="5" y="8"></rect>
+                        <rect height="2" width="4" x="9" y="8"></rect>
+                        <rect height="2" width="3" x="5" y="11"></rect>
+                        <rect height="2" width="4" x="9" y="11"></rect>
+                        </g>
+                    </svg>
+                </button>
                 <!-- Grid tooltip where the users will select how many rols and cols for their table -->
                 <div id="tableTooltip" class="tooltip" style="display: none;">
                     <div id="grid"></div>
                     <div id="gridDimensions">0 x 0</div>
                 </div>
-            </button>
+            </div>
         </span>
     </div>
     

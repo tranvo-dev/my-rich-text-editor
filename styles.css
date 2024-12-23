@@ -2,11 +2,11 @@ body {
     padding: 40px;
 }
 
-.custom-table-button {
+.custom-table-button-wrapper{
     position: relative;
 }
 
-.tooltip {
+.tooltip{
     position: absolute;
     top: 24px;
     left: 0;
@@ -19,13 +19,13 @@ body {
     z-index: 1000;
 }
 
-#grid {
+#grid{
     display: grid;
     grid-template-columns: repeat(10, 20px);
     grid-gap: 2px;
 }
 
-.cell {
+.cell{
     width: 20px;
     height: 20px;
     background: #f0f0f0;
@@ -33,12 +33,12 @@ body {
     cursor: pointer;
 }
 
-.cell.highlighted {
+.cell.highlighted{
     background: #007bff;
     border-color: #0056b3;
 }
 
-#grid-dimensions {
+#grid-dimensions{
     margin-top: 10px;
     font-size: 12px;
     color: #333;
