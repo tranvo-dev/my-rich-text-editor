@@ -40,19 +40,18 @@ tableButton.addEventListener('click', showTheGridTooltip);
 
 
 function handleMouseOverCells(event) {
-    if (event.target.classList.contains('cell')) {
-        const hoveredRow = parseInt(event.target.dataset.row, 10);
-        const hoveredCol = parseInt(event.target.dataset.col, 10);
+    if(event.target.classList.contains('cell')) {
+        const hoveredRow = Number.parseInt(event.target.dataset.row);
+        const hoveredCol = Number.parseInt(event.target.dataset.col);
 
         // Highlight cells up to the hovered cell
         document.querySelectorAll('.cell').forEach(function(cell) {
-            // Convert cell row and cell col index into number for easy to compare
-            const cellRow = cell.dataset.row * 1;
-            const cellCol = cell.dataset.col * 1;
+            const cellRow = Number.parseInt(cell.dataset.row);
+            const cellCol = Number.parseInt(cell.dataset.col);
 
-            if (cellRow <= hoveredRow && cellCol <= hoveredCol) {
+            if(cellRow <= hoveredRow && cellCol <= hoveredCol) {
                 cell.classList.add('highlighted');
-            } else {
+            } else{
                 cell.classList.remove('highlighted');
             }
         });
